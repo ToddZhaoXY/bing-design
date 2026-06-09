@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1 wiki/foundations/grid-layout.md
-stability: beta
+updated: 2026-06-05
+source: ACF Storybook foundations/grid-layout
+stability: stable
 ---
 
 # Grid System
@@ -48,8 +48,21 @@ Page
 |---|---|---|---|
 | Header right group | Visible | Collapsed | Hidden |
 | Drawer | 424px wide | 424px wide | Full-screen |
-| Overlay | Centered modal | 688×424 modal | Full-screen (bottom drawer) |
+| Overlay | Centered modal | 688×424 modal | Full-screen (bottom) |
 | Body gap | 36px | 36px | 24px |
+| Logo | Abs 116px (≥1520) / Static 52px | Static 52px | Static 52px |
+
+## Grid construction
+
+```css
+.serp-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--serp-cols, 12), 1fr);
+  gap: var(--serp-gutter, 24px);
+  width: 100%;
+  max-width: 1200px;  /* CRITICAL: never remove */
+}
+```
 
 ## Grid row types
 
@@ -73,10 +86,16 @@ Values: fluid clamp at XL/L, fixed 36/24px at M/S.
 
 - **Do:** think in column spans, not pixels.
 - **Do:** use `@container serp` for all responsive rules.
+- **Do:** keep grid `max-width: 1200px`.
 - **Do:** keep header, scope tabs, and body left edges pixel-aligned.
+- **Do:** test all 4 breakpoints for every section.
+- **Do:** stack zones vertically at M/S breakpoints.
 - **Don't:** use `@media` queries — use `@container serp`.
 - **Don't:** fix or sticky the header.
-- **Don't:** exceed 1200px max content width.
+- **Don't:** remove grid `max-width: 1200px`.
+- **Don't:** hardcode pixel widths for zones.
+- **Don't:** forget to hide Zone C at mobile breakpoints (Q&A).
+- **Don't:** mix body padding values across breakpoints.
 
 ## Open questions
 
