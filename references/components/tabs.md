@@ -1,12 +1,12 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
 # Tabs (Tab + Tablist)
 
-This document covers two tightly related components: **Tab** (the individual navigation item atom) and **Tablist** (the composite assembly that combines multiple Tabs with a content body panel). In practice, Tablist is the recommended component for building tabbed interfaces — Tab is consumed by Tablist and is documented here for completeness.
+This document covers two tightly related Storybook sections: **Tab** (the individual navigation item atom) and **Tablist** (the composite assembly that combines multiple Tabs with a content body panel). In practice, Tablist is the recommended component for building tabbed interfaces — Tab is consumed by Tablist and is documented here for completeness.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
-stability: beta
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
+stability: stable
 ---
 
 # Page
@@ -29,6 +29,8 @@ This component is used as the root container for any Bing SERP page to establish
 | **column count** | VARIANT | `12` | `12`, `8`, `4`, `2` |
 | **drawer** | BOOLEAN | `false` | `true`, `false` |
 | **overlay** | BOOLEAN | `false` | `true`, `false` |
+
+Drawer and Overlay are Page-level boolean toggles. They should be shown through the Page component's configured slots instead of being manually layered outside the Page hierarchy.
 
 ---
 
@@ -94,6 +96,7 @@ Page is a structural container. Interaction is delegated to child components. La
 - Breakpoint boundaries (1520, 1392, 1025, 641, 640) are tested for smooth transitions.
 - The Drawer is used for progressive disclosure of detail content.
 - The Overlay is used for focused, interruptive tasks that require user attention.
+- Related searches live in the Page Body Section, typically before pagination. Suggestion Chips List is the standard page-level container for this area.
 - Page padding is not overridden within child components.
 - Content is not placed outside the Section structure within the Page body.
 - Drawer and Overlay must be tested at the mobile breakpoint — their behavior changes significantly.

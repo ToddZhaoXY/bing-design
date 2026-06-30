@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -10,7 +10,7 @@ stability: beta
 
 ## Summary
 
-Date Picker is a date selection component that allows users to choose a date or date range. It is classified as a dependency component, meaning it is consumed by other components rather than used standalone in the SERP layout. It provides 4 variants for different selection contexts.
+Date Picker is a date selection component that allows users to choose a date or date range. It is a dependency component consumed by higher-level components such as Form and Filter controls; partners normally encounter it pre-wired rather than as a standalone SERP component. It provides 4 variants for different selection contexts.
 
 This component is appropriate for date selection in forms, filters, or settings panels, and inside Drawer or Overlay panels for date-based filtering. It is not for time-only selection, for simple text input of dates (use Field with date formatting), or for date display (non-interactive).
 
@@ -32,7 +32,7 @@ Total: 2 expanded states × 2 selection types = **4 variants**
 | False | Range | Calendar closed; date range selection mode |
 | True | Range | Calendar open; date range selection |
 
-> **Note:** The exact variant property names are to be confirmed against the Figma source. The 4 variants likely represent combinations of expanded/collapsed state and single/range selection mode.
+The current Storybook update confirms the 4 variants are driven by expanded state and selection mode.
 
 ---
 
@@ -71,6 +71,8 @@ Total: 2 expanded states × 2 selection types = **4 variants**
 - On desktop, the calendar appears as a dropdown below the input field.
 - On mobile (single date), the behavior is the same as desktop; for range date picker, refer to mobile-specific guidance.
 - The component is not used standalone — it is consumed by Form and Filter controls.
+- The input area uses the Field component; the calendar dropdown follows Flyout-like positioning.
+- Calendar cells use consistent sizing and standard spacing tokens for internal padding.
 
 ---
 
@@ -108,4 +110,4 @@ Date cells, selected state indicator, and today's date indicator must all meet W
 
 ## Open questions
 
-- Exact Figma variant property names and values need confirmation against the Figma source. The 4 variants are assumed to be Expanded × Selection type combinations.
+None.

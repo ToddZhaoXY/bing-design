@@ -1,14 +1,14 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
-stability: beta
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
+stability: stable
 ---
 
 # Hero-image Card
 
 The Hero-image Card is a specialized card layout that presents exactly two images side by side within a single card container. It is a single, fixed-layout component with no variant properties — optimized for dual-image presentation in comparison, before/after, or paired-image contexts where both images must be visible simultaneously.
 
-**Figma Node ID:** `24166:52236` · **Type:** `COMPONENT` · **Group:** Cards · **Variants:** 1
+**Figma Node ID:** `24166:52236` · **Type:** `COMPONENT` · **Group:** Cards · **Tier:** Core / Card · **Variants:** 1
 
 ---
 
@@ -69,7 +69,7 @@ Although no explicit state variants are defined in the Figma component, the foll
 ## Usage Rules
 
 - This component is appropriate for side-by-side image comparison (before/after, option A vs. option B), for paired search results, and for dual-image visual answers where both images have equal weight.
-- It is not appropriate for more than 2 images (use Multi Images Carousel Card), for a single image (use Image Card), for images with extensive metadata (use Image Card with `default` or `single Source` feature), or for images of different importance levels.
+- It is not appropriate for more than 2 images (use Multi Images Carousel Card or Image Card with slider feature), for a single image (use Image Card), for images with extensive metadata (use Image Card with `default` or `single Source` feature), or for images of different importance levels.
 - Both images should be of comparable quality, resolution, and visual weight. If used for comparison, both images should be framed consistently (same zoom level, similar composition).
 - Optional metadata (captions, labels, attribution) may appear below the image pair. Image labels (e.g., "Before" / "After") should be visually balanced.
 

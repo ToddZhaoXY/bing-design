@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -62,6 +62,7 @@ This component is appropriate as a card type inside ML body / Short video answer
 ## Usage Rules
 
 - Tok Video uses a vertical (portrait) aspect ratio — taller than it is wide.
+- Current Short Video Answer guidance specifies Tok video cards at a 4:3 height:width ratio with a default 200px height / 150px width.
 - Thumbnail aspect ratio is maintained across all sizes — no stretching or distorting.
 - The bottom overlay is positioned at the bottom of the thumbnail with a semi-transparent background.
 - The play button is centered on the thumbnail.
@@ -79,7 +80,7 @@ This component is appropriate as a card type inside ML body / Short video answer
 - Use high-quality thumbnail images — they are the primary visual hook.
 - Show the time overlay when duration helps users make viewing decisions.
 - Show the play button when it's not obvious the content is a video.
-- Maintain the vertical aspect ratio — don't crop to horizontal.
+- Maintain the 4:3 height:width short-video ratio — don't crop to horizontal.
 
 ### Don't
 - Don't auto-play video preview with sound on — mute by default and let users opt in via the sound icon.

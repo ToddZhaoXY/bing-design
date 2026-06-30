@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -48,10 +48,11 @@ This component has no variant properties. Content is configured by swapping chil
 - Use a clear heading like "Short videos" or "Trending clips" in the Section / title
 - Populate the Horizontal Scroller with 3–8 Tok video cards
 - Each Tok video card shows a vertical thumbnail with source attribution and play overlay
+- Tok video cards use a 4:3 height:width ratio by default, with a 200px height / 150px width reference size
 - The module occupies the full width of Zone A (Mainline)
 - Spacing between the title and scroller uses the standard inner gap (`x-small` / 8px)
 - Vertical spacing above and below matches algo result item spacing
-- Tok video cards must maintain vertical aspect ratio across breakpoints
+- Tok video cards must maintain the 4:3 height:width ratio across breakpoints
 - Horizontal Scroller handles overflow with swipe/arrow navigation
 - On narrow viewports, fewer cards are visible with swipe to reveal more
 - Respect `prefers-reduced-motion` — disable hover-to-preview auto-play when reduced motion is preferred
@@ -63,7 +64,7 @@ This component has no variant properties. Content is configured by swapping chil
 ### Do
 - Provide a clear Section / title heading to identify the short video group
 - Use the Horizontal Scroller for swipeable navigation between Tok video cards
-- Ensure Tok video thumbnails maintain vertical aspect ratio across breakpoints
+- Ensure Tok video thumbnails maintain the 4:3 height:width ratio across breakpoints
 - Respect `prefers-reduced-motion` — show static thumbnails instead of hover auto-play when reduced motion is preferred
 
 ### Don't

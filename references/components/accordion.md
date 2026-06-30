@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -58,6 +58,8 @@ The accordion has two display states driven by the `expanded?` property. There a
 - Width fills the container (640px default, stretches with FILL sizing).
 - Accordions must not be nested inside other accordions.
 - Critical information that users must see must not be placed inside an accordion body.
+- Click/tap on the header row toggles expansion. Enter or Space toggles a focused header; Arrow Up/Down can move between accordion headers in a group.
+- Chevron rotation is automatic and must not be manually overridden.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -15,7 +15,7 @@ stability: beta
 
 ## Summary
 
-List view elements are pre-built row content templates designed to be placed inside the List View body slot. They provide common patterns for dropdown menus, selection lists, and interactive panels. Three element types are included: Option (selection item), Menu item (action/navigation item), and Number input (stepper control).
+List view elements are pre-built row content templates designed to be placed inside the List View body slot. They provide common patterns for dropdown menus, selection lists, and interactive panels. Three element types are included: Option (selection item), Menu item (action/navigation item), and Number input (stepper control). These three element types are now documented as one List View Elements section rather than separate standalone Storybook sections.
 
 These are not the only content that can go inside List View — consumers can also use Checkbox, Button, or any tailor-made design. List view elements are the most common pre-built templates.
 
@@ -91,6 +91,7 @@ This component family is appropriate as ready-made row content inside List View 
 ## Usage Rules
 
 - Always place inside a List View body slot — these are not standalone components.
+- Treat Option, Menu item, and Number input as element types within this family, not as independently selected top-level components.
 - Option: use for selection lists where users pick from predefined choices. Use `checkmark=True` for multi-select or confirmed selections. Use `Two line` for items that need a category label above the main text.
 - Menu item: use for action menus triggered by a Button. Use `start Icon` to visually categorize actions. Use `L2` for items that open sub-menus; do not nest beyond one L2 level.
 - Number input: use for bounded, discrete numeric selections (typically 0–10). Disable the − button at minimum and + button at maximum.

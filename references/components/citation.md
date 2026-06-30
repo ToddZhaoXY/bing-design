@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
-stability: beta
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
+stability: stable
 ---
 
 # Citation
@@ -78,6 +78,8 @@ Displays stacked favicon icons representing multiple sources. Favicons are 16×1
 | Enter | Activates link navigation |
 | Escape | Closes flyout |
 
+Only one citation flyout should be open in a local citation group. Clicking the active citation badge again, clicking outside, or pressing Escape closes the flyout. Hover provides visual feedback only; it does not open citation content.
+
 ---
 
 ## Usage Rules
@@ -86,11 +88,13 @@ Displays stacked favicon icons representing multiple sources. Favicons are 16×1
 - The citation badge is placed immediately after the referenced sentence or claim within AI/Copilot-generated body text.
 - Renders as a compact chip (e.g., `⇔ 1`) that flows inline — no line break needed.
 - When `active=true`, a flyout opens showing the full source link.
+- Inline citation activation is click/tap or keyboard activation, not hover.
 
 ### In Card placement
 - Placed at the bottom of the AI/Copilot card, below the body content.
 - Renders as a row of avatar thumbnails + source count label (e.g., `⇔ 4 Sources`) in the card footer area.
 - When `active=true`, expands to show all source links.
+- Clicking the active In Card badge again collapses the source list.
 - When sources overflow the row width, wrap in a Horizontal Scroller.
 
 ### Style selection

@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -10,9 +10,9 @@ stability: beta
 
 ## Summary
 
-Truncation is a text overflow indicator and control component. It is an internal dependency inside Card body elements, appearing at the end of card content as a "Continue reading →" navigation link that opens the full source detail page in a new tab. The 4 variants cover the interaction states of this navigation link.
+Truncation is a text overflow indicator and control component. It is an internal dependency inside Card Body Elements, appearing at the end of overflowing card content as a "Continue reading →" navigation link. The 4 variants cover the interaction states of this navigation link.
 
-Note: Truncation is a navigation link — it does not expand text inline. Clicking it opens the full source page in a new browser tab.
+Note: The current Storybook guidance treats the trigger as a navigation link that opens the full source page in a new browser tab, not as inline expansion. If a consumer uses an expand/collapse truncation pattern, expanded content must reflow inside its container and be re-collapsible.
 
 This component is appropriate when text content may exceed available space (card descriptions, answer text) and users should be able to navigate to the full source. It is not for section-level expand/collapse (use Section Footer "Expansion" action) or when text should always be fully visible.
 
@@ -53,6 +53,7 @@ The 4 variants represent the 4 interaction states of the "Continue reading →" 
 - Titles are not truncated — titles are generally fully visible.
 - Critical information is kept in the visible (non-truncated) portion.
 - Max visible lines may change across breakpoints (e.g., 3 lines desktop → 2 lines mobile).
+- Expanded content, when used, must reflow properly within its container and should not push critical mobile content excessively below the fold.
 
 ---
 
@@ -62,6 +63,8 @@ The 4 variants represent the 4 interaction states of the "Continue reading →" 
 - Truncate at a maximum line count that preserves meaning (typically 2–3 lines).
 - Make truncation feel deliberate — the ellipsis should suggest "more content available."
 - Keep the most important information in the visible (non-truncated) portion.
+- Make navigation-link behavior explicit to assistive technology (for example, "opens in new tab").
+- Ensure expanded text is re-collapsible if the consumer uses an expand/collapse truncation pattern.
 
 ### Don't
 - Don't truncate titles — they should generally be fully visible.

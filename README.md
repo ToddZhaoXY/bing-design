@@ -8,6 +8,7 @@ Bing Design System (ACF) reference skill — neutral, standardized, single sourc
 |---|---|---|
 | 2026-05-21 | Initial build — full skill structure, 83 components, layout, foundations, patterns | serp-design-skill v2.1 |
 | 2026-06-05 | Foundations & visual quality update — typography, color, spacing, radius, elevation, motion, grid, VQ rubric promoted to stable | ACF Storybook (vibehub) |
+| 2026-06-30 | Storybook content sync — added Chart and ML Body / Q&A Answer, merged removed sub-sections into parent docs, refreshed component index and high-impact component rules | ACF Storybook content update report |
 
 ## What this is
 
@@ -38,7 +39,7 @@ bing-design/
     │   ├── zones.md
     │   ├── sections.md
     │   └── card-architecture.md
-    ├── components/             # 83 component reference docs
+    ├── components/             # Component reference docs aligned to Storybook sections
     │   ├── index.md
     │   └── *.md
     ├── patterns/               # Cross-cutting patterns

@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -10,7 +10,7 @@ stability: beta
 
 ## Summary
 
-Card Body Elements is a template catalog of grab-and-use card interior layouts. Rather than a single component, it provides 17+ pre-built body templates, carousel patterns, chart types, and reusable components that drop directly into card body slots. Each template comes with pre-wired dependencies — no manual assembly is required. The correct template is selected based on the content pattern and dropped into a card body slot (e.g., Answer Card, Image Card).
+Card Body Elements is a template catalog of grab-and-use card interior layouts. Rather than a single standalone component, it provides 17+ pre-built body templates, carousel patterns, chart types, and reusable components that drop directly into card body slots. Each template comes with pre-wired dependencies — no manual assembly is required. The correct template is selected based on the content pattern and dropped into a card body slot (e.g., Answer Card, Image Card).
 
 This catalog is appropriate for populating the body slot of a card component with a pre-built layout, when the content matches a known pattern (news article, entity list, ratings, weather, etc.), and when carousel patterns, chart visualizations, or nested card layouts are needed inside a card body.
 
@@ -51,6 +51,8 @@ These templates are not for standalone page layouts, non-card containers, top-le
 | 3 by 4 Listed entities | single | Entity grid |
 | Page by page carousel | 12v (4 widths × 3 slides) | Paginated carousel |
 
+Page-by-page carousel is now documented as part of this catalog rather than as a standalone Storybook section.
+
 ### Charts
 
 | Name | Description |
@@ -67,6 +69,8 @@ These templates are not for standalone page layouts, non-card containers, top-le
 |------|----------|-------------|
 | Nested Card | 12v (6 states × 2 themes) | Card-within-card; accent and neutral themes |
 | Product | 8v (layout × style × discount) | E-commerce product card |
+
+Nested Card is now treated as a reusable template within Card Body Elements rather than a standalone Storybook section.
 
 ### Internal Dependencies (not for direct use)
 
@@ -148,7 +152,7 @@ All templates inherit color tokens from the parent card container. Text content 
 | **Basic** | The generic card body slot that hosts these templates |
 | **Nested Card** | Both a reusable component in this catalog and a card container that can host body templates |
 | **Carousel** | Parent pattern for carousel-type body templates |
-| **Charts** | Standalone chart components also available as body templates in this catalog |
+| **Chart** | Standalone display component also available through chart templates in this catalog |
 
 ---
 

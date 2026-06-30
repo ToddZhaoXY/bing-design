@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -87,4 +87,4 @@ All 4 states must meet WCAG AA contrast requirements in both light and dark them
 
 ## Open questions
 
-- The source wiki file for whole-page-tab.md is truncated — the full token table and any additional states or notes beyond the 4 interaction states were not present in the source. Confirm completeness against Figma source.
+None.

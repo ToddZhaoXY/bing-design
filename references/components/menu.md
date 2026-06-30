@@ -1,6 +1,6 @@
 ---
-updated: 2026-05-21
-source: serp-design-skill v2.1
+updated: 2026-06-30
+source: ACF Storybook content update report 2026-06-30
 stability: beta
 ---
 
@@ -64,6 +64,8 @@ Menu is a dropdown container that toggles between collapsed and expanded states.
 - Menu must not overflow the viewport — reposition if necessary
 - Menu can be triggered by a button, avatar, or icon
 - Options in a menu typically initiate an immediate action or navigation
+- Use List View Elements / Menu item rows inside the flyout body for standard action rows.
+- Menu flyout alignment is controlled by the `alignment` property; do not manually offset the flyout to fake left/right alignment.
 
 ---
 

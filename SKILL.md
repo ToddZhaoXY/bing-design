@@ -15,7 +15,7 @@ description: >
   this Skill.
 metadata:
   stability: beta
-  updated: 2026-05-21
+  updated: 2026-06-30
 ---
 
 # Bing Design System — Reference
